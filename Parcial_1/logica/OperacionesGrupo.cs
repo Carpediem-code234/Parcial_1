@@ -9,8 +9,7 @@ namespace Parcial_1.logica
 {
     public class OperacionesGrupo
     {
-
-            // Método para realizar la unión con otro grupo
+         
             public  Grupo Union(Grupo grupo1, Grupo grupo2)
             {
                 Grupo resultado = new Grupo($"Union({grupo1.NombreGrupo}, {grupo2.NombreGrupo})");
@@ -27,8 +26,7 @@ namespace Parcial_1.logica
 
                 return resultado;
             }
-
-            // Método para realizar la intersección con otro grupo
+            
             public Grupo Interseccion(Grupo grupo1, Grupo grupo2)
             {
                 Grupo resultado = new Grupo($"Interseccion({grupo1.NombreGrupo}, {grupo2.NombreGrupo})");
@@ -43,8 +41,7 @@ namespace Parcial_1.logica
 
                 return resultado;
             }
-
-            // Método para realizar la diferencia con otro grupo
+          
             public Grupo Diferencia(Grupo grupo1, Grupo grupo2)
             {
                 Grupo resultado = new Grupo($"Diferencia({grupo1.NombreGrupo}, {grupo2.NombreGrupo})");

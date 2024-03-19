@@ -23,8 +23,7 @@ namespace Parcial_1.entidad
             Sexo = sexo;
             PromedioNotas = promedioNotas;
         }
-
-        // Método para obtener el estado del estudiante
+        
         public string ObtenerEstado()
         {
             return $"{Nombres} {Apellidos} , {Edad} años, Sexo: {Sexo}, Promedio: {PromedioNotas}";

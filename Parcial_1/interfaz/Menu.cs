@@ -110,7 +110,7 @@ namespace Parcial_1.interfaz
             {
                 Console.WriteLine($"{i + 1}. {grupos[i].NombreGrupo}");
             }
-            Console.Write("Seleccione el número de grupo del que desea ver los estudiantes: ");
+            Console.Write("Seleccione el # de grupo del que desea ver los estudiantes: ");
             int indiceGrupoEstudiantes = int.Parse(Console.ReadLine()) - 1;
             grupos[indiceGrupoEstudiantes].ImprimirEstudiantes();
             Console.ReadKey();
@@ -134,11 +134,12 @@ namespace Parcial_1.interfaz
             int indiceGrupo1 = int.Parse(Console.ReadLine()) - 1;
             Console.Write("Seleccione el número del segundo grupo: ");
             int indiceGrupo2 = int.Parse(Console.ReadLine()) - 1;
-
-            Console.WriteLine("Seleccione la operación:");
+            Console.WriteLine();
+            
             Console.WriteLine("1. Unión");
             Console.WriteLine("2. Intersección");
             Console.WriteLine("3. Diferencia (M - N)");
+            Console.WriteLine("Seleccione la operación:");
             string operacion = Console.ReadLine();
 
             OperacionesGrupo operaciones = new OperacionesGrupo();

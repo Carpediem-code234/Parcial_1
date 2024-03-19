@@ -23,11 +23,11 @@ namespace Parcial_1.entidad
         
         public void AgregarEstudiante(Estudiante estudiante)
         {
-            // Verificar si el estudiante ya existe en el grupo
+
             if (!Pertenencia(estudiante))
-            {
-                estudiantes.Add(estudiante);
+            {   
                 Console.WriteLine($"Estudiante '{estudiante.Nombres} {estudiante.Apellidos}' agregado al grupo '{NombreGrupo}'.");
+                estudiantes.Add(estudiante);
             }
             else
             {
@@ -40,8 +40,7 @@ namespace Parcial_1.entidad
         {
             foreach (Estudiante e in estudiantes)
             {
-                if (e.Nombres == estudiante.Nombres && e.Apellidos == estudiante.Apellidos &&
-                    e.Edad == estudiante.Edad && e.Sexo == estudiante.Sexo && e.PromedioNotas == estudiante.PromedioNotas)
+                if (e.Nombres == estudiante.Nombres && e.Apellidos == estudiante.Apellidos)
                 {
                     return true;
                 }
